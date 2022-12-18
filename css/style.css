@@ -8358,7 +8358,7 @@ h1, h2, h3, h4, h5,
 
 .home-wrap .half {
   width: 50%;
-  background: #000000; }
+  background: #0C0D16; }
 
 .owl-carousel {
   position: relative; }
@@ -8778,9 +8778,9 @@ textarea.form-control {
   background: #3c312e; }
 
 .ftco-footer {
-  font-size: 16px;
-  background: #000;
-  padding: 7em 0;
+  font-size: 12px;
+  background: #791E04;
+  padding: 2em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9617,3 +9617,113 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.rizkagilangLogo {
+  height: 80vh;
+}
+
+.photoFrame {
+  max-width: 50%;
+}
+
+.textFrame {
+  max-width: 80%;
+  margin-top: 30px;
+}
+
+.bg1 {
+  width: 100%;
+  background: url(../images/bg1.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+  background-position: center center !important;
+}
+
+.PConly {
+  display: block;
+}
+
+.SPonly {
+  display: none;
+}
+
+.size15 {
+  width: 15%;
+}
+
+.size50 {
+  width: 50%;
+}
+
+.cardEvent {
+  background: rgba(255, 255, 255, 0.7)
+}
+
+.btnRSVP {
+  color: #ffffff;
+  padding: 10px 30px 10px 30px;
+  background: #791E04 !important;
+  background-repeat: no-repeat !important;
+  background-size: 20% !important;
+  background-position: 10% 50% !important;
+  border-radius: 7px;
+}
+
+.btnLoc {
+  color: #ffffff;
+  padding: 10px 20px 10px 40px;
+  background: #791E04 !important;
+  background-image: url(../images/loc.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 20% !important;
+  background-position: 10% 50% !important;
+  border-radius: 7px;
+}
+
+button{
+  color: #ffffff;
+  padding: 10px 30px 10px 30px;
+  background: #791E04 !important;
+  border-radius: 7px;
+}
+
+.RnG {
+  width: 20%  ;
+}
+
+@media (max-width: 767.98px) {
+  .PConly {
+  display: none !important;
+  }
+  .SPonly {
+  display: block !important;
+  }
+  .sizeSP40 {
+    width: 40% !important;
+  }
+  .sizeSP80 {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rizkagilangLogo {
+  width: 100%;
+  height: auto;
+}
+
+.bg1 {
+  width: 100%;
+  background: url(../images/bg1_sp.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 125% !important;
+  background-position: center center !important;
+}
+
+}
+
+.rizkagilangBG {
+  background: url(../images/bg_4.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
