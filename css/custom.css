@@ -134,7 +134,7 @@
 
 .rizkagilangBG .bg1 {
   margin-top: 0;
-  padding-top: 2vh;
+  padding-top: 5vh;
 }
 
 .rizkagilangBG h2 {
@@ -196,7 +196,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0;
-  padding-top: 5vh;
+  padding-top: 7vh;
 }
 
 .hadiahContainer p img {
@@ -233,6 +233,17 @@
 
 #scroll-container section {
   scroll-snap-align: center;
+}
+
+#scroll-container section:not(:last-child) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#scroll-container section:first-child {
+  display: block;
 }
 
 .accordion dd,

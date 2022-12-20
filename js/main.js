@@ -1,4 +1,4 @@
-// AOS.init({ duration: 600 });
+AOS.init({ duration: 2500 });
 
 (function ($) {
   "use strict";
