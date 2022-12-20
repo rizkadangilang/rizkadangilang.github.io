@@ -46,8 +46,9 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <script>
+    let sendTo = window.location.search.substr(1).slice(3);
     jQuery(document).ready(function ($) {
-      $("#welcome-gate .et_pb_text_inner h2").before("<p> Ayi </p>");
+      $("#welcome-gate .et_pb_text_inner h2").before(`<p> ${sendTo} </p>`);
     });
   </script>
   <body>
