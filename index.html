@@ -53,7 +53,7 @@
         </p>
       </div>
     </main>
-    <main id="SP">
+    <main id="SP" class="disable">
       <audio id="background-audio" loop="true">
         <source src="audio/backgroundSound.mp3" type="audio/mpeg" />
       </audio>
@@ -128,6 +128,8 @@
                       e.preventDefault();
                       j(this).addClass("move-gate");
                       document.getElementById("background-audio").play();
+                      document.getElementById("SP");
+                      $("#SP").removeClass();
                       $(".amazingaudioplayer-play").hide();
                       $(".amazingaudioplayer-pause").show();
                     });
@@ -143,9 +145,7 @@
                 <h1>She &amp; Him</h1>
               </div>
             </div>
-            <div
-              class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module openButton"
-            >
+            <div class="openButton">
               <a
                 class="et_pb_button et_pb_button_0 et_pb_bg_layout_light"
                 href=""
@@ -234,8 +234,8 @@
 
         <section class="ftco-section ftco-intro">
           <div class="container">
-            <div class="row js-fullheight justify-content-end">
-              <div class="col-md-12">
+            <div class="row justify-content-center">
+              <div class="upperContainer">
                 <h2 class="text-center ftco-animate">
                   <span>The Happy Couple</span>
                 </h2>
@@ -243,28 +243,8 @@
                   “The highest happiness on earth is the happiness of marriage.”
                 </p>
               </div>
-              <div class="col-md-12 col-sm-12 d-flex PConly">
-                <div class="col-md-6">
-                  <p class="text-center ftco-animate">
-                    <img class="photoFrame" src="images/frame_rizka.png" />
-                    <img class="textFrame" src="images/text-rizka.png" />
-                  </p>
-                  <p class="text-center">
-                    Putri dari Bapak Sugeng Suharyadi (alm) & Ibu Sunarti
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p class="text-center ftco-animate">
-                    <img class="photoFrame" src="images/frame_gilang.png" />
-                    <img class="textFrame" src="images/text-gilang.png" />
-                  </p>
-                  <p class="text-center">
-                    Putra Bapak Yulius (alm) & Ibu Murdiati
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-12 SPonly">
-                <div class="col-sm-12 ftco-animate">
+              <div class="SPonly">
+                <div class="ftco-animate">
                   <p class="text-center">
                     <img class="photoFrame" src="images/frame_rizka.png" />
                     <img class="textFrame" src="images/text-rizka.png" />
@@ -289,7 +269,7 @@
 
         <section>
           <div class="js-fullheight d-flex rizkagilangBG">
-            <div class="bg1 pt-5">
+            <div class="bg1">
               <h2 class="text-center mt-3">
                 <img
                   class="size50 sizeSP80 ftco-animate"
@@ -304,16 +284,13 @@
                         <strong>Akad Nikah</strong>
                       </h5>
                       <p class="card-text text-center">
-                        Sabtu, 14 Januari 2023
-                      </p>
-                      <p class="card-text text-center">
-                        Pukul 15.30 WIB - Selesai
-                      </p>
-                      <p class="card-text text-center">
+                        Sabtu, 14 Januari 2023<br />
+                        Pukul 15.30 WIB - Selesai<br />
                         Gedung AXA Sky Tower, Lantai 46.<br />Kuningan, Jakarta
                         Selatan.
                       </p>
-                      <p class="text-center mt-1">
+
+                      <p class="text-center button">
                         <a
                           href="https://maps.app.goo.gl/M1sakJpW2t1wmJjLA"
                           class="btnLoc"
@@ -337,7 +314,7 @@
                         Gedung AXA Sky Tower, Lantai 46.<br />Kuningan, Jakarta
                         Selatan.
                       </p>
-                      <p class="text-center mt-1">
+                      <p class="text-center button">
                         <a
                           href="https://maps.app.goo.gl/M1sakJpW2t1wmJjLA"
                           class="btnLoc"
@@ -352,7 +329,7 @@
           </div>
         </section>
 
-        <section class="ftco-section ftco-portfolio bg1">
+        <section class="ftco-section ftco-portfolio bg1 RSVPcontainer">
           <div class="container-fluid">
             <div class="row justify-content-center pb-3">
               <div
@@ -361,10 +338,10 @@
                 <h2 class="mb-5 text-center">
                   <img class="sizeSP80" src="images/work-2.jpg" />
                 </h2>
-                <p class="text-center">
-                  <img class="size15 sizeSP40" src="images/rsvp.png" />
+                <p class="text-center rsvpImage">
+                  <img class="" src="images/rsvp.png" />
                 </p>
-                <p class="text-center">
+                <p class="text-center rsvpText">
                   Kami tidak sabar menunggu hari pernikahan kami bersama
                   Bapak/Ibu/Saudara/i,<br />mohon konfirmasi kehadiran
                   Bapak/Ibu/Saudara/i. Terima kasih.
@@ -378,30 +355,24 @@
             </div>
           </div>
         </section>
-        <section class="ftco-section ftco-portfolio bg1">
-          <div class="container-fluid">
-            <div class="row justify-content-center pb-3">
-              <div
-                class="col-md-12 mb-5 heading-section text-center ftco-animate"
-              >
-                <h2 class="mb-5 text-center">
-                  <img class="sizeSP80" src="images/work-3.jpg" />
-                </h2>
-                <p class="text-center">
-                  <img class="size15 sizeSP40" src="images/kirimhadiah.png" />
-                </p>
-                <p class="text-center">
-                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                  <center>
-                    <h5>BCA a.n. XXXXXX</h5>
-                    <h6>1234567</h6>
-                    <button onclick="copyToClipboard('h6')">
-                      <span id="copyText">Copy</span>
-                    </button>
-                  </center>
-                </p>
-              </div>
-            </div>
+        <section class="ftco-section ftco-portfolio bg1 hadiahContainer">
+          <div class="col-md-12 mb-5 heading-section text-center ftco-animate">
+            <h2 class="mb-5 text-center">
+              <img class="sizeSP80" src="images/work-3.jpg" />
+            </h2>
+            <p class="text-center">
+              <img class="" src="images/kirimhadiah.png" />
+            </p>
+            <p class="text-center">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+              <center>
+                <h5>BCA a.n. XXXXXX</h5>
+                <h6>1234567</h6>
+                <button onclick="copyToClipboard('h6')">
+                  <span id="copyText">Copy</span>
+                </button>
+              </center>
+            </p>
           </div>
 
           <footer class="ftco-footer ftco-section">

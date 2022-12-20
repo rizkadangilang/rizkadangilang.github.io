@@ -1,3 +1,7 @@
+* {
+  /* outline: 2px solid green; */
+}
+
 #SP {
   display: none;
 }
@@ -9,11 +13,19 @@
   place-items: center;
 }
 
+#SP.disable {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 #welcome-gate {
+  font-family: "Poppins", Arial, sans-serif;
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0px;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: grid;
   place-items: center;
@@ -34,48 +46,182 @@
 #welcome-gate p,
 #welcome-gate h2,
 #welcome-gate h1 {
+  font-family: "Poppins", Arial, sans-serif;
   color: white;
 }
 
 .openButton {
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 3px;
+  font-size: 2.2vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  color: #ffffff;
+  padding: 10px 30px 10px 30px;
+  background: #791e04 !important;
+  background-repeat: no-repeat !important;
+  background-size: 20% !important;
+  background-position: 10% 50% !important;
+  border-radius: 7px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.et_pb_section .et_pb_button_0 {
-  color: #000000 !important;
-  width: 100%;
-  border-width: 0px !important;
-  font-size: 16px;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
-  padding-right: 0.7em;
-  padding-left: 2em;
-  background-color: #ffffff;
-  font-weight: 500;
-  padding: 0.3em 1em;
-  line-height: 1.7em !important;
-  border: 2px solid;
-  border-radius: 3px;
+.openButton a {
+  color: white;
 }
+
 .audioContainer {
   position: fixed;
   z-index: 20;
-  bottom: 5vh;
   right: 5vw;
+  bottom: 5vh;
   color: gray;
   background-color: white;
-  width: 40px;
-  height: 40px;
+  width: 13vw;
+  height: 13vw;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 16px;
   border: 1px solid brown;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.audioContainer i {
-  user-select: none;
+.amazingaudioplayer-play i {
+  font-size: 8vw;
+}
+.amazingaudioplayer-pause i {
+  font-size: 6vw;
+}
+
+.ftco-portfolio,
+.ftco-intro,
+.rizkagilangBG {
+  height: 100vh;
+}
+
+.ftco-intro .photoFrame {
+  max-width: none;
+  height: 20vh;
+  width: auto;
+  margin-top: 2vh;
+}
+
+.ftco-intro .upperContainer {
+  height: fit-content;
+  /* max-height: 0.6vh; */
+}
+
+.ftco-intro .upperContainer p {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.ftco-intro .textFrame {
+  margin-top: 10px;
+}
+
+.ftco-intro .text-center {
+  margin-bottom: 5px;
+}
+
+.ftco-intro p {
+  font-size: 1.8vh;
+}
+
+.rizkagilangBG .bg1 {
+  margin-top: 0;
+  padding-top: 2vh;
+}
+
+.rizkagilangBG h2 {
+  margin-top: 0;
+}
+
+.rizkagilangBG .cardEvent {
+  padding: 0;
+}
+
+.rizkagilangBG h2 img {
+  height: 3.5vh !important;
+  width: auto !important;
+  max-width: none !important;
+}
+.rizkagilangBG h5 {
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
+}
+
+.rizkagilangBG p {
+  font-size: 2.2vh;
+  margin-bottom: 1vh;
+}
+
+.rizkagilangBG .text-center.button {
+  margin-top: 3vh;
+}
+
+.RSVPcontainer,
+.RSVPcontainer .container-fluid {
+  height: 100vh;
+}
+
+.RSVPcontainer h2 img {
+  padding-top: 7vh;
+}
+
+.rsvpImage img {
+  width: 50% !important;
+  margin-bottom: 1vh;
+}
+
+.rsvpText {
+  font-size: 2.1vh;
+  line-height: 200% !important;
+  margin-bottom: 6vh;
+}
+
+.RSVPcontainer .text-center a {
+  font-size: 2.2vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.hadiahContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
+  padding-top: 10vh;
+}
+
+.hadiahContainer p img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.hadiahContainer center h5 {
+  font-size: 2.6vh;
+}
+
+.hadiahContainer center h6 {
+  font-size: 2.4vh;
+  margin-bottom: 3vh;
+}
+
+.hadiahContainer button span {
+  font-size: 2.2vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 /* #scroll-container {
