@@ -46,6 +46,17 @@
   color: white;
 }
 
+#welcome-gate h5,
+#welcome-gate h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#welcome-gate p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .openButton {
   font-size: 2.2vh;
   padding-top: 1.5vh;
