@@ -366,25 +366,96 @@
         </section>
         <section class="ftco-section ftco-portfolio bg1 hadiahContainer">
           <div
-            class="col-md-12 mb-5 heading-section text-center aos"
+            class="col-md-12 heading-section text-center aos"
             data-aos="fade-up"
           >
-            <h2 class="mb-5 text-center">
+            <h2 class="mb-3 text-center">
               <img class="sizeSP80" src="images/work-3.jpg" />
             </h2>
             <p class="text-center">
               <img class="" src="images/kirimhadiah.png" />
             </p>
-            <p class="text-center">
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-              <center>
-                <h5>BCA a.n. XXXXXX</h5>
-                <h6>1234567</h6>
-                <button onclick="copyToClipboard('h6')">
-                  <span id="copyText">Copy</span>
-                </button>
-              </center>
-            </p>
+          </div>
+          <div class="accordion">
+            <dl>
+              <dt>
+                <a
+                  href="#accordion1"
+                  aria-expanded="false"
+                  aria-controls="accordion1"
+                  class="accordion-title accordionTitle js-accordionTrigger"
+                  >First Accordion heading</a
+                >
+              </dt>
+              <dd
+                class="accordion-content accordionItem is-collapsed"
+                id="accordion1"
+                aria-hidden="true"
+              >
+                <p class="text-center">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                  <center>
+                    <h5>BCA a.n. XXXXXX</h5>
+                    <h6 id="cpy1">1234567</h6>
+                    <button onclick="copyToClipboard('#cpy1','#copyText1')">
+                      <span id="copyText1">Copy</span>
+                    </button>
+                  </center>
+                </p>
+              </dd>
+              <dt>
+                <a
+                  href="#accordion2"
+                  aria-expanded="false"
+                  aria-controls="accordion2"
+                  class="accordion-title accordionTitle js-accordionTrigger"
+                >
+                  Second Accordion heading</a
+                >
+              </dt>
+              <dd
+                class="accordion-content accordionItem is-collapsed"
+                id="accordion2"
+                aria-hidden="true"
+              >
+                <p class="text-center">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                  <center>
+                    <h5>BCA a.n. XXXXXX</h5>
+                    <h6 id="cpy2">gs123123</h6>
+                    <button onclick="copyToClipboard('#cpy2','#copyText2')">
+                      <span id="copyText2">Copy</span>
+                    </button>
+                  </center>
+                </p>
+              </dd>
+              <dt>
+                <a
+                  href="#accordion3"
+                  aria-expanded="false"
+                  aria-controls="accordion3"
+                  class="accordion-title accordionTitle js-accordionTrigger"
+                >
+                  Third Accordion heading
+                </a>
+              </dt>
+              <dd
+                class="accordion-content accordionItem is-collapsed"
+                id="accordion3"
+                aria-hidden="true"
+              >
+                <p class="text-center">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                  <center>
+                    <h5>BCA a.n. XXXXXX</h5>
+                    <h6 id="cpy3">1231245</h6>
+                    <button onclick="copyToClipboard('#cpy3','#copyText3')">
+                      <span id="copyText3">Copy</span>
+                    </button>
+                  </center>
+                </p>
+              </dd>
+            </dl>
           </div>
 
           <footer class="ftco-footer ftco-section">
@@ -442,13 +513,13 @@
         observer.observe(aosObject);
       });
 
-      function copyToClipboard(element) {
+      function copyToClipboard(element, text) {
         var $temp = $("<input>");
         $("body").append($temp);
         $temp.val($(element).text()).select();
         document.execCommand("copy");
         $temp.remove();
-        $("#copyText").text("Copied");
+        $(`${text}`).text("Copied");
       }
     </script>
 

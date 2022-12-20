@@ -1,5 +1,6 @@
 * {
   /* outline: 2px solid green; */
+  scroll-behavior: smooth;
 }
 
 #SP {
@@ -201,14 +202,13 @@
 .hadiahContainer p img {
   width: 70%;
   height: auto;
-  margin-bottom: 2vh;
 }
 
 .hadiahContainer center h5 {
   font-size: 2.6vh;
 }
 
-.hadiahContainer center h6 {
+.hadiahContainer center .copyText {
   font-size: 2.4vh;
   margin-bottom: 3vh;
 }
@@ -227,11 +227,168 @@
 
 #scroll-container {
   overflow: auto;
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  /* scroll-snap-stop: always; */
 }
 
 #scroll-container section {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+}
+
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* .accordion p {
+  padding: 1em 2em 1em 2em;
+} */
+
+.accordion {
+  position: relative;
+  background-color: #eee;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  background-color: #791e04;
+  text-align: center;
+  font-weight: 700;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #791e04;
+}
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #761b02;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #761b02;
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  max-height: 50em;
+  transition: max-height 1s;
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 15em;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+  animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
 }
 
 @media (max-width: 768px) {
