@@ -30,7 +30,7 @@
       rgba(0, 4, 10, 0.36) 68%,
       #000c0f 100%
     ),
-    url("https://img.freepik.com/premium-photo/white-muslim-wedding-dress-photo_423537-293.jpg?w=2000") !important;
+    url("../images/bg_welcome.jpg") !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
