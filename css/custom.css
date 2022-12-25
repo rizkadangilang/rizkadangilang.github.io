@@ -190,7 +190,7 @@
 }
 
 .rsvpText {
-  font-size: 2.1vh;
+  font-size: 1.7vh;
   line-height: 200% !important;
   margin-bottom: 6vh;
 }
@@ -291,7 +291,7 @@
 }
 .accordionTitle:before,
 .accordion__Heading:before {
-  content: "+";
+/*  content: "+";*/
   font-size: 1.5em;
   line-height: 0.5em;
   float: left;

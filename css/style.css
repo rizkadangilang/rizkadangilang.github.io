@@ -12654,3 +12654,8 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
+
+.text09 {
+  width: 80vw;
+  margin-bottom: 10px;
+}
