@@ -12659,3 +12659,7 @@ button {
   width: 80vw;
   margin-bottom: 10px;
 }
+
+.loraFont {
+  font-family: 'Lora', serif;
+}
